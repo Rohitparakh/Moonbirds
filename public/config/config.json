@@ -1,0 +1,18 @@
+{
+  "CONTRACT_ADDRESS": "0x1082cb089de2ed91cbab338850da50d56496837d",
+  "SCAN_LINK": "https://etherscan.io/address/0x1082cb089de2ed91cbab338850da50d56496837d",
+  "NETWORK": {
+    "NAME": "Ethereum",
+    "SYMBOL": "ETH",
+    "ID": 1
+  },
+  "NFT_NAME": "MoonBirds Moonie",
+  "SYMBOL": "MOONBIRDS",
+  "MAX_SUPPLY": 2500,
+  "WEI_COST": 9900000000000000,
+  "DISPLAY_COST": 0.0099,
+  "GAS_LIMIT": 110000,
+  "MARKETPLACE": "Opensea",
+  "MARKETPLACE_LINK": "https://testnets.opensea.io/collection/",
+  "SHOW_BACKGROUND": true
+}

@@ -1,0 +1,41 @@
+{
+  "name": "yumi_nft",
+  "version": "1.0.0",
+  "description": "MoonBirds Moonie NFT NFT",
+  "private": true,
+  "dependencies": {
+    "ethers": "^5.6.2",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-gif-player": "^0.4.2",
+    "react-redux": "^7.2.4",
+    "react-scripts": "4.0.3",
+    "react-slick": "^0.28.1",
+    "redux": "^4.1.1",
+    "redux-thunk": "^2.3.0",
+    "slick-carousel": "^1.8.1",
+    "styled-components": "^5.3.0",
+    "truffle-hdwallet-provider": "^1.0.17",
+    "web-vitals": "^1.0.1",
+    "web3": "^1.5.1",
+    "web3-eth-contract": "^1.5.2"
+  },
+  "author": "Daniel Eugene Botha (HashLips)",
+  "license": "MIT",
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}
