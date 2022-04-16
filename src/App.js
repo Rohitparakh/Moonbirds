@@ -129,7 +129,7 @@ function App() {
   });
 
   const description =
-    "Moonbirds Moonie is a collection of 2500 Moonies which are ready to moon🚀🚀";
+    "Moonbirds Moonie is a collection of 1500 Moonies which are ready to moon🚀🚀";
 
   const [totalSupply, setTotalSupply] = useState(0);
 
