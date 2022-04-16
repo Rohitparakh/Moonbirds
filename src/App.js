@@ -286,7 +286,7 @@ function App() {
           <div className="slideImage">
             <img
               style={{ maxHeight: "516px" }}
-              src={`https://cdn.discordapp.com/attachments/960782078406955058/961288159277244467/ezgif.com-gif-maker_7.gif`}
+              src={`https://cdn.discordapp.com/attachments/923870894311497738/964876589064134676/IMG_2164.gif`}
             />
           </div>
         </div>
