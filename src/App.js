@@ -310,9 +310,11 @@ function App() {
                 // border: "4px solid black",
                 border: "10px inset rgba(0,0,0,1)",
                 boxShadow: "0px 5px 11px 2px rgba(0,0,0,0.7)",
+                position: "relative",
               }}
             >
-              <s.TextTitle
+              <p className="soldout">Sold Out!</p>
+              {/* <s.TextTitle
                 style={{
                   textAlign: "center",
                   fontSize: 50,
@@ -332,133 +334,7 @@ function App() {
                   {truncate(CONFIG.CONTRACT_ADDRESS, 15)}
                 </StyledLink>
               </s.TextDescription>
-              <s.SpacerSmall />
-              {Number(data.totalSupply) >= CONFIG.MAX_SUPPLY ? (
-                <>
-                  <s.TextTitle
-                    style={{ textAlign: "center", color: "var(--accent)" }}
-                  >
-                    The sale has ended.
-                  </s.TextTitle>
-                  <s.TextDescription
-                    style={{ textAlign: "center", color: "var(--accent)" }}
-                  >
-                    You can still find {CONFIG.NFT_NAME} on
-                  </s.TextDescription>
-                  <s.SpacerSmall />
-                  <StyledLink target={"_blank"} href={CONFIG.MARKETPLACE_LINK}>
-                    {CONFIG.MARKETPLACE}
-                  </StyledLink>
-                </>
-              ) : (
-                <>
-                  <s.TextTitle
-                    style={{ textAlign: "center", color: "var(--accent)" }}
-                  >
-                    {/* 1 {CONFIG.SYMBOL} costs {CONFIG.DISPLAY_COST}{" "}{CONFIG.NETWORK.SYMBOL}. */}
-                    Price: {CONFIG.DISPLAY_COST} {CONFIG.NETWORK.SYMBOL}.
-                  </s.TextTitle>
-                  <s.SpacerXSmall />
-                  <s.TextDescription
-                    style={{ textAlign: "center", color: "var(--accent)" }}
-                  >
-                    {/* Excluding gas fees. */}
-                  </s.TextDescription>
-                  <s.SpacerSmall />
-                  {blockchain.account === "" ||
-                  blockchain.smartContract === null ? (
-                    <s.Container ai={"center"} jc={"center"}>
-                      <s.TextDescription
-                        style={{
-                          textAlign: "center",
-                          color: "var(--accent)",
-                        }}
-                      >
-                        Connect to the {CONFIG.NETWORK.NAME} network
-                      </s.TextDescription>
-                      <s.SpacerSmall />
-                      <StyledButton
-                        onClick={(e) => {
-                          e.preventDefault();
-                          dispatch(connect());
-                          getData();
-                        }}
-                      >
-                        CONNECT
-                      </StyledButton>
-                      {blockchain.errorMsg !== "" ? (
-                        <>
-                          <s.SpacerSmall />
-                          <s.TextDescription
-                            style={{
-                              textAlign: "center",
-                              color: "var(--accent)",
-                            }}
-                          >
-                            {blockchain.errorMsg}
-                          </s.TextDescription>
-                        </>
-                      ) : null}
-                    </s.Container>
-                  ) : (
-                    <>
-                      <s.TextDescription
-                        style={{
-                          textAlign: "center",
-                          color: "var(--accent)",
-                        }}
-                      >
-                        {feedback}
-                      </s.TextDescription>
-                      <s.SpacerMedium />
-                      <s.Container ai={"center"} jc={"center"} fd={"row"}>
-                        <StyledRoundButton
-                          style={{ lineHeight: 0.4 }}
-                          disabled={claimingNft ? 1 : 0}
-                          onClick={(e) => {
-                            e.preventDefault();
-                            decrementMintAmount();
-                          }}
-                        >
-                          -
-                        </StyledRoundButton>
-                        <s.SpacerMedium />
-                        <s.TextDescription
-                          style={{
-                            textAlign: "center",
-                            color: "var(--accent)",
-                          }}
-                        >
-                          {mintAmount}
-                        </s.TextDescription>
-                        <s.SpacerMedium />
-                        <StyledRoundButton
-                          disabled={claimingNft ? 1 : 0}
-                          onClick={(e) => {
-                            e.preventDefault();
-                            incrementMintAmount();
-                          }}
-                        >
-                          +
-                        </StyledRoundButton>
-                      </s.Container>
-                      <s.SpacerSmall />
-                      <s.Container ai={"center"} jc={"center"} fd={"row"}>
-                        <StyledButton
-                          disabled={claimingNft ? 1 : 0}
-                          onClick={(e) => {
-                            e.preventDefault();
-                            claimNFTs();
-                            getData();
-                          }}
-                        >
-                          {claimingNft ? "Minting" : "Mint"}
-                        </StyledButton>
-                      </s.Container>
-                    </>
-                  )}
-                </>
-              )}
+              <s.SpacerSmall /> */}
               <s.SpacerMedium />
             </s.Container>
           </div>
