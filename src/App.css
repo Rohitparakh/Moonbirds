@@ -301,7 +301,7 @@ background: transparent;
 text-shadow: 0 0 5px #FFF, 0 0 10px #FFF, 0 0 15px #FFF, 0 0 20px #49ff18;
 -webkit-text-stroke-width: 0.1px;
 -webkit-text-stroke-color: #000; */
-  font-family: fantasy;
+  font-family: "Roboto Mono", monospace;
   line-height: 1em;
   /* color: #fff9d6; */
   color: #8f7bff;
